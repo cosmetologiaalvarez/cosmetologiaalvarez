@@ -1,0 +1,107 @@
+@mixin setSizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+$firstColor : #ccb7cb;
+$lightColor : white;
+$darkColor : rgba(56, 102, 77, 0.2);
+
+.navColor{
+    background: $firstColor;
+}
+
+.encabezado {
+    color : $firstColor;
+    font-family: 'Dancing Script';
+    font-weight: bold;
+    text-align: center;
+}
+
+main {
+    background-color: $lightColor;
+    section {
+        margin: 30px 15px 30px 15px;
+    }
+}
+
+.reviewContainer {
+    justify-content: center;
+    display:flex;
+    
+    .floatCard {
+        border: 2px solid $firstColor;
+        margin: 30px 15px 30px 15px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 $darkColor;
+        transition: 0.5s;
+        max-width: 400px;
+        display: inline-block;
+        position: relative;
+        
+        .floatCard__image {
+            align-self: center;
+            @include setSizes(370px, 370px);
+        }
+
+        @media only screen and (max-width:700px) {
+            .floatCard__image {
+                @include setSizes(100%, auto);
+            }
+        }
+
+        .floatCard__content {
+            align-self: center;
+            top: 30%;
+            left: 10%;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+            h3 {
+                background-color : $firstColor;
+                color: $lightColor;
+                text-align: center;
+                padding: 10px;
+                font-size: 1rem;
+            }
+            .floatCard__content__text {
+                overflow:auto;
+                height: 120px;
+                padding: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.imageList {
+    div {
+        display: inline-block;
+    }
+}
+
+.about {
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+
+    .about__text {
+        background-color: rgba(179, 179, 201, 0.6);
+        font-size: 1.5rem;
+        color: $lightColor;
+        margin: 10% 10%;
+    }
+}
+
+.form--contact {
+    margin: 2% 2%;
+    padding: 1rem 1rem;
+    background-image: url(images/backImage.jpg);
+    opacity: 0.5;
+    
+    .form__label {
+        color: black;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}

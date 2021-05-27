@@ -1,0 +1,115 @@
+.navColor {
+  background: #ccb7cb;
+}
+
+.encabezado {
+  color: #ccb7cb;
+  font-family: 'Dancing Script';
+  font-weight: bold;
+  text-align: center;
+}
+
+main {
+  background-color: white;
+}
+
+main section {
+  margin: 30px 15px 30px 15px;
+}
+
+.reviewContainer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviewContainer .floatCard {
+  border: 2px solid #ccb7cb;
+  margin: 30px 15px 30px 15px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(56, 102, 77, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(56, 102, 77, 0.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  max-width: 400px;
+  display: inline-block;
+  position: relative;
+}
+
+.reviewContainer .floatCard .floatCard__image {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 370px;
+  width: 370px;
+}
+
+@media only screen and (max-width: 700px) {
+  .reviewContainer .floatCard .floatCard__image {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.reviewContainer .floatCard .floatCard__content {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  top: 30%;
+  left: 10%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.reviewContainer .floatCard .floatCard__content h3 {
+  background-color: #ccb7cb;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.reviewContainer .floatCard .floatCard__content .floatCard__content__text {
+  overflow: auto;
+  height: 120px;
+  padding: 20px;
+  text-align: center;
+}
+
+.imageList div {
+  display: inline-block;
+}
+
+.about {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+}
+
+.about .about__text {
+  background-color: rgba(179, 179, 201, 0.6);
+  font-size: 1.5rem;
+  color: white;
+  margin: 10% 10%;
+}
+
+.form--contact {
+  margin: 2% 2%;
+  padding: 1rem 1rem;
+  background-image: url(images/backImage.jpg);
+  opacity: 0.5;
+}
+
+.form--contact .form__label {
+  color: black;
+  font-size: 1.2rem;
+  text-align: center;
+}
+/*# sourceMappingURL=sassStyle.css.map */

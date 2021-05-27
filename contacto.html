@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contacta a Majo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="SkinCare, Cosmetologa, Cosmetologia, Dermaplaning, Limpieza">
+        <meta name="description" content="En este sitio vas a encontrar información acerca de productos recomendados y tratamientos que ofrecemos para una piel mas saludable.">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="sassStyle.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark navColor justify-content-center">
+            <div class="nav">
+                <a class="navbar-brand" href="index.html">Majo Cosmetologia</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link "  href="resenias.html">Reseñas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="about.html">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section>
+                <h2 class="encabezado">Tienes dudas o consultas?</h2>
+                <div class="form--contact">
+                    <form>
+                        <div class="mb-3">
+                            <label for="userName" class="form-label form__label">Nombre</label>
+                            <input type="text" class="form-control" id="userName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="userEmail" class="form-label form__label">Email</label>
+                            <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="userText" class="form-label form__label">Ingrese su consulta</label>
+                            <textarea  class="form-control" id="userText"></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="suscripcion" value="1">
+                            <label class="form-check-label form__label" for="suscripcion">Deseas recibir las ultimas novedades de Majo?</label>
+                        </div>
+                        <button type="reset" class="btn btn-light">Limpiar</button>
+                        <button type="submit" class="btn btn-light">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
