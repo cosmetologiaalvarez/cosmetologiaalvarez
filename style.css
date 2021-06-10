@@ -52,7 +52,6 @@ body {
 }
 
 p {
-    letter-spacing: 0.3rem;
     color:#464141;
     text-align: center;
 }
@@ -103,8 +102,13 @@ p {
     margin: 1rem 0.5rem;
 }
 
+.card-title{
+    background-color: rgba(170, 141, 179, 0.5);
+    text-align: center;
+}
+
 .card__text {
-    text-align: left;
+    text-align: center;
 }
 
 .servicioImages {
@@ -171,5 +175,10 @@ p {
         height: 200px;
         width: 300px;
     }
+}
+
+.backImage {
+    width: 100%;
+    background-image: url("https://images.pexels.com/photos/2911521/pexels-photo-2911521.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
 }
 /* Fin Servicios*/
