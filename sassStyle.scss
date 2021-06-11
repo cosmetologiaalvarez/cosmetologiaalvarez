@@ -28,7 +28,7 @@ main {
 .reviewContainer {
     justify-content: center;
     display:flex;
-    
+    background-image: url(https://images.pexels.com/photos/3906101/pexels-photo-3906101.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
     .floatCard {
         border: 2px solid $firstColor;
         margin: 30px 15px 30px 15px;
@@ -38,6 +38,7 @@ main {
         max-width: 400px;
         display: inline-block;
         position: relative;
+        background-color: rgba(250, 250, 250, 0.6);
         
         .floatCard__image {
             align-self: center;
@@ -54,6 +55,7 @@ main {
             align-self: center;
             top: 30%;
             left: 10%;
+            padding-bottom: 20px;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             
             h3 {
@@ -104,4 +106,11 @@ main {
         font-size: 1.2rem;
         text-align: center;
     }
+}
+
+.separatorImage {
+    width: 100%;
+    height: 4rem;
+    opacity: 70%;
+    background-image: url(https://images.pexels.com/photos/1592119/pexels-photo-1592119.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
 }
