@@ -24,7 +24,9 @@ main section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(https://images.pexels.com/photos/1293006/pexels-photo-1293006.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background-image: url(https://images.pexels.com/photos/430207/pexels-photo-430207.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .reviewContainer .floatCard {
@@ -85,6 +87,28 @@ main section {
   display: inline-block;
 }
 
+.aboutBack {
+  padding: 40px 20px 40px 20px;
+  background-image: url(https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background-repeat: round;
+}
+
+.steticIcon_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.steticIcon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #5cb85c;
+}
+
 .about {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -98,7 +122,7 @@ main section {
 
 .about .about__text {
   background-color: rgba(179, 179, 201, 0.6);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: white;
   margin: 10% 10%;
 }
