@@ -90,7 +90,6 @@ main section {
 .aboutBack {
   padding: 40px 20px 40px 20px;
   background-image: url(https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
-  background-repeat: round;
 }
 
 .steticIcon_container {
