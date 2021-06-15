@@ -28,11 +28,7 @@ main {
 .reviewContainer {
     justify-content: center;
     display:flex;
-    background-image: url("https://images.pexels.com/photos/2911521/pexels-photo-2911521.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
-    
-    // background-image: url(https://images.pexels.com/photos/430207/pexels-photo-430207.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
-    // background-repeat: ;
-    // background-size: cover;
+    background-image: url("https://images.pexels.com/photos/2512387/pexels-photo-2512387.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     .floatCard {
         border: 2px solid $firstColor;
         margin: 30px 15px 30px 15px;
@@ -122,9 +118,6 @@ main {
 
     .aboutImages img{
         grid-area: "aboutImages";
-        // margin: 0rem 0rem 0rem 0rem;
-        // margin-bottom
-        // @include setSizes(100px, 100px);
 
     }
 }
