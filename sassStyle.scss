@@ -86,45 +86,44 @@ main {
     grid-template-columns: 35% 65%;
     grid-template-rows: "aboutImages about";
     
+    .aboutImages {
+        grid-area: "aboutImages";
+    }
     .about {
-        border: outset;
         height: 95%;
         width: 90%;
         grid-area: "about";
         margin-left: 2rem;
+        
         .about__text {
-            height: 83%;
-            border-color: rgba(80, 73, 83, 0.2);
+            height: fit-content;
             background-color: rgba(186, 137, 180, 0.6);
             border-radius: 5px;
             font-size: 1.7rem;
             color: $lightColor;
-            margin: 5% 5%;
+            padding: 10% 10%;
+            margin-top: 5%;
         }
     }
 }
 
 @media only screen and (max-width:700px) {
-    .about {
-        position: absolute;
-        margin-right: 2rem;
-        margin-top: 2rem;
-        
-    }
-
     .aboutContainer {
-        grid-template-columns: 70% 30%;
-    }
-
-    .aboutImages img{
-        grid-area: "aboutImages";
+        grid-template-columns: 1fr;
+        width: 100%;
+        
+        .about {
+            position: absolute;
+            align-self: center;
+            margin-left: 1rem;
+            .about__text{
+                font-size: 1.68rem;
+            }
+        }
 
     }
 }
 
-.aboutImages {
-    grid-area: "aboutImages";
-}
 
 .steticIcon_container {
     margin-top: 6rem;

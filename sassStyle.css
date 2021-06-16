@@ -94,8 +94,11 @@ main section {
       grid-template-rows: "aboutImages about";
 }
 
+.aboutContainer .aboutImages {
+  grid-area: "aboutImages";
+}
+
 .aboutContainer .about {
-  border: outset;
   height: 95%;
   width: 90%;
   grid-area: "about";
@@ -103,32 +106,33 @@ main section {
 }
 
 .aboutContainer .about .about__text {
-  height: 83%;
-  border-color: rgba(80, 73, 83, 0.2);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: rgba(186, 137, 180, 0.6);
   border-radius: 5px;
   font-size: 1.7rem;
   color: white;
-  margin: 5% 5%;
+  padding: 10% 10%;
+  margin-top: 5%;
 }
 
 @media only screen and (max-width: 700px) {
-  .about {
-    position: absolute;
-    margin-right: 2rem;
-    margin-top: 2rem;
-  }
   .aboutContainer {
-    -ms-grid-columns: 70% 30%;
-        grid-template-columns: 70% 30%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
   }
-  .aboutImages img {
-    grid-area: "aboutImages";
+  .aboutContainer .about {
+    position: absolute;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-left: 1rem;
   }
-}
-
-.aboutImages {
-  grid-area: "aboutImages";
+  .aboutContainer .about .about__text {
+    font-size: 1.68rem;
+  }
 }
 
 .steticIcon_container {
