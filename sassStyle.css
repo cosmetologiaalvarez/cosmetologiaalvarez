@@ -171,4 +171,8 @@ main .sectionSpace {
   opacity: 70%;
   background-image: url(https://images.pexels.com/photos/1592119/pexels-photo-1592119.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
 }
+
+.carousel-caption {
+  bottom: unset;
+}
 /*# sourceMappingURL=sassStyle.css.map */
