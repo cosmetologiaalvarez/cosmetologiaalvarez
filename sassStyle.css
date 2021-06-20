@@ -172,7 +172,42 @@ main .sectionSpace {
   background-image: url(https://images.pexels.com/photos/1592119/pexels-photo-1592119.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
 }
 
+@media screen and (min-width: 700px) {
+  .home_container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .home_container .cardsSeccion {
+    position: absolute;
+    margin: 30% 10%;
+  }
+}
+
+.card_Item {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .carousel-caption {
   bottom: unset;
+}
+
+.row {
+  max-width: unset;
+  --bs-gutter-x: 0;
+}
+
+.card
+.btn-primary {
+  background-color: #ccb7cb;
+  border-color: #ccb7cb;
+}
+
+.card
+.btn-primary:hover {
+  background-color: #ccb7cb;
+  border-color: white;
 }
 /*# sourceMappingURL=sassStyle.css.map */

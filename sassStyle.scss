@@ -124,7 +124,6 @@ main {
     }
 }
 
-
 .steticIcon_container {
     margin-top: 6rem;
     display: flex;
@@ -158,10 +157,39 @@ main {
     background-image: url(https://images.pexels.com/photos/1592119/pexels-photo-1592119.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
 }
 
+@media screen and (min-width:700px) {
+    .home_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+            .cardsSeccion {
+            position: absolute;
+            margin: 30% 10%;
+        }
+    }
+}
+
+.card_Item {
+    background-color: rgba($color: $lightColor, $alpha: 0.5);
+}
+
 .carousel-caption {
     bottom: unset;
 }
 
 .row {
     max-width: unset;
+    --bs-gutter-x: 0;
+}
+
+.card
+
+.btn-primary {
+    background-color: $firstColor;
+    border-color: $firstColor;
+
+    &:hover {
+        background-color: $firstColor;
+        border-color: $lightColor;
+    }
 }
